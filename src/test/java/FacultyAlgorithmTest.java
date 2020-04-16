@@ -1,15 +1,16 @@
+import interfaces.IFacultyAlgorithm;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class AlgorithmTest {
+public class FacultyAlgorithmTest {
 
-    private static Algorithm algorithm;
+    private static IFacultyAlgorithm algorithm;
 
     @BeforeClass
     public static void beforeAll() {
-        algorithm = new Algorithm();
+        algorithm = new FacultyAlgorithm();
     }
 
     @Test
@@ -18,7 +19,7 @@ public class AlgorithmTest {
 
         var output = algorithm.faculty(input);
 
-        assertEquals(output, input);
+        assertEquals(input, output);
     }
 
     @Test
@@ -27,6 +28,6 @@ public class AlgorithmTest {
 
         var output = algorithm.faculty(input);
 
-        assertEquals(output, 6);
+        assertEquals(6, output);
     }
 }
