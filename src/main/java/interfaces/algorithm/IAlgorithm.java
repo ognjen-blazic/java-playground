@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces.algorithm;
 
 public interface IAlgorithm {
 }

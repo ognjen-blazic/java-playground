@@ -1,8 +1,10 @@
-import interfaces.ISearchAlgorithm;
+package algorithm;
+
+import interfaces.algorithm.ISearch;
 
 import java.util.List;
 
-public class BinarySearchAlgorithm implements ISearchAlgorithm {
+public class BinarySearch implements ISearch {
     @Override
     public int search(List<Integer> collection, int searchValue) {
         return binarySearch(collection, searchValue, 0, collection.size() - 1);

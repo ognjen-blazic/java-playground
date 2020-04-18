@@ -1,6 +1,8 @@
-import interfaces.IFibonacciAlgorithm;
+package algorithm;
 
-public class FibonacciNotRecursiveAlgorithm implements IFibonacciAlgorithm {
+import interfaces.algorithm.IFibonacci;
+
+public class FibonacciNotRecursive implements IFibonacci {
     @Override
     public int fibonacci(int n) {
         var prev = 1;

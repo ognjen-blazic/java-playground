@@ -1,16 +1,19 @@
-import interfaces.IFacultyAlgorithm;
+package algorithm;
+
+import algorithm.Faculty;
+import interfaces.algorithm.IFaculty;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class FacultyAlgorithmTest {
+public class FacultyTest {
 
-    private static IFacultyAlgorithm algorithm;
+    private static IFaculty algorithm;
 
     @BeforeClass
     public static void beforeAll() {
-        algorithm = new FacultyAlgorithm();
+        algorithm = new Faculty();
     }
 
     @Test

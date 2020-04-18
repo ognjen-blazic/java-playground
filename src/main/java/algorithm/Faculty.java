@@ -1,6 +1,8 @@
-import interfaces.IFacultyAlgorithm;
+package algorithm;
 
-public class FacultyAlgorithm implements IFacultyAlgorithm {
+import interfaces.algorithm.IFaculty;
+
+public class Faculty implements IFaculty {
     @Override
     public int faculty(int n) {
         if (n == 1) {

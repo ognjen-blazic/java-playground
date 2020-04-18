@@ -1,4 +1,7 @@
-import interfaces.ISearchAlgorithm;
+package algorithm;
+
+import algorithm.BinarySearch;
+import interfaces.algorithm.ISearch;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -7,12 +10,12 @@ import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
-public class BinarySearchAlgorithmTest {
-    private static ISearchAlgorithm algorithm;
+public class BinarySearchTest {
+    private static ISearch algorithm;
 
     @BeforeClass
     public static void beforeAll() {
-        algorithm = new BinarySearchAlgorithm();
+        algorithm = new BinarySearch();
     }
 
     @Test

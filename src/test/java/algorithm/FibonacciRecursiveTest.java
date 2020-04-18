@@ -1,16 +1,19 @@
-import interfaces.IFibonacciAlgorithm;
+package algorithm;
+
+import algorithm.FibonacciRecursive;
+import interfaces.algorithm.IFibonacci;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class FibonacciNotRecursiveAlgorithmTest {
+public class FibonacciRecursiveTest {
 
-    private static IFibonacciAlgorithm algorithm;
+    private static IFibonacci algorithm;
 
     @BeforeClass
     public static void beforeAll() {
-        algorithm = new FibonacciNotRecursiveAlgorithm();
+        algorithm = new FibonacciRecursive();
     }
 
     @Test
