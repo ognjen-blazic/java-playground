@@ -1,5 +1,5 @@
 # Java playground
-Contains various modules including ...
+Contains various modules including basic algorithms.
 
 Every class is covered by unit tests.
 
